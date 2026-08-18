@@ -10,29 +10,31 @@
       
       
       
-        <link rel="canonical" href="https://scyne-sam.github.io/Learning-Git/">
+        <link rel="canonical" href="https://scyne-sam.github.io/Learning-Git/validation/">
       
       
+        <link rel="prev" href="..">
       
-        <link rel="next" href="validation/">
+      
+        <link rel="next" href="../failures/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Learning Git</title>
+        <title>Validation checks - Learning Git</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#learning-git" class="md-skip">
+        <a href="#validation-checks" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Learning Git" class="md-header__button md-logo" aria-label="Learning Git" data-md-component="logo">
+    <a href=".." title="Learning Git" class="md-header__button md-logo" aria-label="Learning Git" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Validation checks
             
           </span>
         </div>
@@ -228,7 +230,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Learning Git" class="md-nav__button md-logo" aria-label="Learning Git" data-md-component="logo">
+    <a href=".." title="Learning Git" class="md-nav__button md-logo" aria-label="Learning Git" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -255,6 +257,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -274,7 +303,7 @@
   <span class="md-ellipsis">
     
   
-    Home
+    Validation checks
   
 
     
@@ -285,14 +314,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Home
+    Validation checks
   
 
     
@@ -318,10 +347,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-started-locally" class="md-nav__link">
+  <a href="#install-the-hooks" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Getting started locally
+        Install the hooks
       
     </span>
   </a>
@@ -329,10 +358,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-a-page" class="md-nav__link">
+  <a href="#what-runs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adding a page
+        What runs
       
     </span>
   </a>
@@ -340,10 +369,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quality-gates" class="md-nav__link">
+  <a href="#the-pipeline" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Quality gates
+        The pipeline
       
     </span>
   </a>
@@ -365,34 +394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="validation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Validation checks
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="failures/" class="md-nav__link">
+      <a href="../failures/" class="md-nav__link">
         
   
   
@@ -439,10 +441,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-started-locally" class="md-nav__link">
+  <a href="#install-the-hooks" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Getting started locally
+        Install the hooks
       
     </span>
   </a>
@@ -450,10 +452,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-a-page" class="md-nav__link">
+  <a href="#what-runs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adding a page
+        What runs
       
     </span>
   </a>
@@ -461,10 +463,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quality-gates" class="md-nav__link">
+  <a href="#the-pipeline" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Quality gates
+        The pipeline
       
     </span>
   </a>
@@ -491,26 +493,90 @@
   
 
 
-<h1 id="learning-git">Learning Git<a class="headerlink" href="#learning-git" title="Permanent link">&para;</a></h1>
-<p>Welcome to the Learning Git site. These pages are written in Markdown under <code>docs/</code>
-and published automatically to GitHub Pages.</p>
-<h2 id="getting-started-locally">Getting started locally<a class="headerlink" href="#getting-started-locally" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
-<span class="nb">source</span><span class="w"> </span>.venv/bin/activate
-pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements-docs.txt
-mkdocs<span class="w"> </span>serve
+<h1 id="validation-checks">Validation checks<a class="headerlink" href="#validation-checks" title="Permanent link">&para;</a></h1>
+<p>Every commit is screened by <a href="https://pre-commit.com">pre-commit</a>. The same hooks run
+again in GitHub Actions, and the docs site is only deployed if they all pass.</p>
+<h2 id="install-the-hooks">Install the hooks<a class="headerlink" href="#install-the-hooks" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+pip<span class="w"> </span>install<span class="w"> </span>pre-commit
+pre-commit<span class="w"> </span>install
 </code></pre></div>
-<p>Then open <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a>.</p>
-<h2 id="adding-a-page">Adding a page<a class="headerlink" href="#adding-a-page" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Create a new Markdown file in <code>docs/</code>.</li>
-<li>Add it to the <code>nav</code> section of <code>mkdocs.yml</code>.</li>
-<li>Commit and push to <code>main</code> — the site rebuilds and deploys itself.</li>
-</ol>
-<h2 id="quality-gates">Quality gates<a class="headerlink" href="#quality-gates" title="Permanent link">&para;</a></h2>
-<p>Commits are checked by <a href="validation/">pre-commit</a> before they land, and the site is
-only deployed once those same checks pass in CI. If something trips, the
-<a href="failures/">failure examples</a> page explains the output and the fix.</p>
+<p>From then on, <code>git commit</code> runs the checks against your staged files. To check the
+whole repository at once:</p>
+<div class="highlight"><pre><span></span><code>pre-commit<span class="w"> </span>run<span class="w"> </span>--all-files
+</code></pre></div>
+<h2 id="what-runs">What runs<a class="headerlink" href="#what-runs" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Hook</th>
+<th>Scope</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>trailing-whitespace</code></td>
+<td>all files</td>
+<td>Strips trailing spaces that create noisy diffs</td>
+</tr>
+<tr>
+<td><code>end-of-file-fixer</code></td>
+<td>all files</td>
+<td>Guarantees a single trailing newline</td>
+</tr>
+<tr>
+<td><code>mixed-line-ending</code></td>
+<td>all files</td>
+<td>Normalises everything to LF</td>
+</tr>
+<tr>
+<td><code>check-yaml</code></td>
+<td><code>*.yml</code>, <code>*.yaml</code></td>
+<td>Parses <code>mkdocs.yml</code> and the workflows</td>
+</tr>
+<tr>
+<td><code>check-merge-conflict</code></td>
+<td>all files</td>
+<td>Blocks <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> markers</td>
+</tr>
+<tr>
+<td><code>check-added-large-files</code></td>
+<td>all files</td>
+<td>Rejects anything over 512 KB</td>
+</tr>
+<tr>
+<td><code>markdownlint-cli2</code></td>
+<td><code>docs/**/*.md</code></td>
+<td>Enforces consistent Markdown structure</td>
+</tr>
+<tr>
+<td><code>codespell</code></td>
+<td><code>docs/**/*.md</code></td>
+<td>Finds common misspellings in prose</td>
+</tr>
+<tr>
+<td><code>mkdocs build --strict</code></td>
+<td><code>docs/</code>, <code>mkdocs.yml</code></td>
+<td>Fails on broken links, bad nav, unknown config</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Bypassing is a last resort</p>
+<p><code>git commit --no-verify</code> skips the hooks locally, but CI still runs them and the
+deploy job will refuse to publish. Fix the finding instead.</p>
+</div>
+<h2 id="the-pipeline">The pipeline<a class="headerlink" href="#the-pipeline" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    A[git commit] --&gt; B{pre-commit hooks}
+    B -- fail --&gt; C[Commit aborted]
+    B -- pass --&gt; D[Push to main]
+    D --&gt; E{Validate job}
+    E -- fail --&gt; F[No deploy]
+    E -- pass --&gt; G[mkdocs gh-deploy --remote-branch docs]
+    G --&gt; H[GitHub Pages]</code></pre>
+<p>See <a href="../failures/">Failure examples</a> for what each check looks like when it trips.</p>
 
 
 
@@ -566,10 +632,10 @@ only deployed once those same checks pass in CI. If something trips, the
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "content.code.copy", "search.highlight"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "content.code.copy", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
