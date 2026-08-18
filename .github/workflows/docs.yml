@@ -38,6 +38,9 @@ jobs:
 
       - run: pip install -r requirements-docs.txt
 
+      - name: Generate commit pages
+        run: python scripts/gen_commit_docs.py
+
       - name: Configure git identity
         run: |
           git config user.name "github-actions[bot]"

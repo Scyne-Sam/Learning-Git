@@ -33,10 +33,18 @@ repos:
     hooks:
       - id: mkdocs-build-strict
         name: mkdocs build --strict
-        entry: mkdocs build --strict --site-dir .mkdocs-precommit
+        entry: python scripts/gen_commit_docs.py --build --site-dir .mkdocs-precommit
         language: python
         additional_dependencies:
           - mkdocs>=1.6,<2.0
           - mkdocs-material>=9.5,<10.0
         pass_filenames: false
-        files: ^(docs/.*|mkdocs\.yml)$
+        always_run: true
+
+      - id: record-validation
+        name: record validation result for commit
+        entry: python scripts/record_validation.py
+        language: system
+        stages: [post-commit]
+        pass_filenames: false
+        always_run: true

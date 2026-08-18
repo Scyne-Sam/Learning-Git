@@ -2,6 +2,9 @@
 site/
 .mkdocs-precommit/
 
+# Generated from git history on every docs build
+docs/commits/
+
 # Python
 .venv/
 venv/

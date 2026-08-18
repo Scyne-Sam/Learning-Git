@@ -36,6 +36,12 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/status.css
 
 plugins:
   - search
@@ -44,3 +50,7 @@ nav:
   - Home: index.md
   - Validation checks: validation.md
   - Failure examples: failures.md
+  - Commit log: commits/index.md
+
+not_in_nav: |
+  commits/*.md

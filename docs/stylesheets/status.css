@@ -1,0 +1,11 @@
+.md-typeset .pass svg {
+  fill: #2e7d32;
+}
+
+.md-typeset .fail svg {
+  fill: #c62828;
+}
+
+.md-typeset .unknown svg {
+  fill: #9e9e9e;
+}
