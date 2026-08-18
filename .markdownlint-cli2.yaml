@@ -1,0 +1,8 @@
+config:
+  default: true
+  # Long prose lines are fine; wrapping is a rendering concern.
+  MD013: false
+  # Allow inline HTML for admonition/figure tweaks.
+  MD033: false
+globs:
+  - "docs/**/*.md"

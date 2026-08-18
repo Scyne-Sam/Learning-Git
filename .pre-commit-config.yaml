@@ -1,0 +1,42 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+      - id: end-of-file-fixer
+      - id: check-yaml
+        # mkdocs.yml uses !!python/name: tags for Mermaid fences.
+        args: [--unsafe]
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: [--maxkb=512]
+      - id: mixed-line-ending
+        args: [--fix=lf]
+
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.18.1
+    hooks:
+      - id: markdownlint-cli2
+        files: ^docs/.*\.md$
+
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.4.1
+    hooks:
+      - id: codespell
+        args: [--ignore-words=.codespellignore]
+        files: ^docs/.*\.md$
+        # This page quotes misspellings on purpose as sample output.
+        exclude: ^docs/failures\.md$
+
+  - repo: local
+    hooks:
+      - id: mkdocs-build-strict
+        name: mkdocs build --strict
+        entry: mkdocs build --strict --site-dir .mkdocs-precommit
+        language: python
+        additional_dependencies:
+          - mkdocs>=1.6,<2.0
+          - mkdocs-material>=9.5,<10.0
+        pass_filenames: false
+        files: ^(docs/.*|mkdocs\.yml)$

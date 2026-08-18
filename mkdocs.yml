@@ -30,11 +30,17 @@ markdown_extensions:
   - toc:
       permalink: true
   - pymdownx.highlight
-  - pymdownx.superfences
   - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 plugins:
   - search
 
 nav:
   - Home: index.md
+  - Validation checks: validation.md
+  - Failure examples: failures.md
