@@ -269,24 +269,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -303,58 +285,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started-locally" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Getting started locally
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adding-a-page" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Adding a page
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quality-gates" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Quality gates
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -461,47 +391,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started-locally" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Getting started locally
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adding-a-page" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Adding a page
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quality-gates" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Quality gates
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -523,25 +412,6 @@
 <h1 id="learning-git">Learning Git<a class="headerlink" href="#learning-git" title="Permanent link">&para;</a></h1>
 <p>Welcome to the Learning Git site. These pages are written in Markdown under <code>docs/</code>
 and published automatically to GitHub Pages.</p>
-<h2 id="getting-started-locally">Getting started locally<a class="headerlink" href="#getting-started-locally" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
-<span class="nb">source</span><span class="w"> </span>.venv/bin/activate
-pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements-docs.txt
-mkdocs<span class="w"> </span>serve
-</code></pre></div>
-<p>Then open <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a>.</p>
-<h2 id="adding-a-page">Adding a page<a class="headerlink" href="#adding-a-page" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Create a new Markdown file in <code>docs/</code>.</li>
-<li>Add it to the <code>nav</code> section of <code>mkdocs.yml</code>.</li>
-<li>Commit and push to <code>main</code> — the site rebuilds and deploys itself.</li>
-</ol>
-<h2 id="quality-gates">Quality gates<a class="headerlink" href="#quality-gates" title="Permanent link">&para;</a></h2>
-<p>Commits are checked by <a href="validation/">pre-commit</a> before they land, and the site is
-only deployed once those same checks pass in CI. If something trips, the
-<a href="failures/">failure examples</a> page explains the output and the fix.</p>
-<p>The <a href="commits/">commit log</a> is generated straight from <code>git log</code> on every
-build, pairing each commit with the validation result recorded when it was made.</p>
 
 
 
