@@ -34,4 +34,4 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Build and deploy to docs branch
-        run: mkdocs gh-deploy --force --branch docs
+        run: mkdocs gh-deploy --force --remote-branch docs
