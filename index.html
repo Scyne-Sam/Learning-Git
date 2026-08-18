@@ -51,6 +51,8 @@
       
     
     
+      <link rel="stylesheet" href="stylesheets/status.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -412,6 +414,33 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="commits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commit log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -511,6 +540,8 @@ mkdocs<span class="w"> </span>serve
 <p>Commits are checked by <a href="validation/">pre-commit</a> before they land, and the site is
 only deployed once those same checks pass in CI. If something trips, the
 <a href="failures/">failure examples</a> page explains the output and the fix.</p>
+<p>The <a href="commits/">commit log</a> is generated straight from <code>git log</code> on every
+build, pairing each commit with the validation result recorded when it was made.</p>
 
 
 
